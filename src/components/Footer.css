@@ -1,0 +1,38 @@
+.footer__left>img
+{
+width:80px;
+height:40px;  
+margin: 10px 10px;
+}
+.footer__left>p{
+font-weight: 600;
+font-size: 30px;
+margin:10px;
+
+
+}
+.footer__left{
+    width:100%;
+    flex:0.2;
+    background-color: white;
+    padding: 10px;
+}
+
+.footer{
+border: 2px solid lightgray;
+border-radius: 10px;
+display: flex;
+}
+.footer__right{
+    width: 100%;
+    flex:0.8;
+   padding-left: 20px;
+    background-color: aliceblue;
+    padding-right: 20px;
+    display:flex;
+    justify-content: space-around;
+}
+.footer__Icons
+{
+    margin:10px;
+}

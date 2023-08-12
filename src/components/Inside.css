@@ -1,0 +1,219 @@
+.top__img{
+    width:100%;
+    height:400px;
+}
+.Inside__top
+{
+    border:1px solid white;
+    display: flex;
+    border-radius: 5px;
+    padding: 2px;
+    margin:10px;
+    align-items: center;
+    background-color: white;
+}
+
+.Inside 
+{
+    display: flex;
+    flex-direction: column;
+    margin:10px 100px;
+    
+}
+.Inside__left
+{
+    border:1px solid white;
+    margin: 10px 30px;
+    border-radius: 5px;
+    padding: 10px;
+   height: 55vh;
+    align-items: center;
+    background-color: white;
+    flex:0.2;
+}
+.Inside__left>p
+{
+margin: 10px;
+}
+.Insidebottom__Options
+{
+    display:flex;
+    justify-content: space-around;
+    border:1px solid white;
+    background-color: white;
+    border-radius: 5px;
+    margin: 10px;
+}
+.Insidebottom__Timeline
+{
+    border:1px solid white;
+    background-color:white;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+.timeline1
+{
+    border: 1px solid #F9F9F9;
+        background-color: #F9F9F9;
+        border-radius: 5px;
+        margin: 10px;
+        padding: 10px;
+}
+.timeline2 {
+    border: 1px solid #F9F9F9;
+    background-color: #F9F9F9;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+.timeline3 {
+    border: 1px solid #F9F9F9;
+    background-color: #F9F9F9;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+.Inside__info
+{
+    flex: 0.8;
+}
+.Insidebottom__Details
+{
+    border:1px solid white;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+
+}
+.Insidebottom__Dates
+{
+    border:1px solid white;
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap:1rem;
+}
+.Insidebottom__Prizes
+{
+    border:1px solid white;
+    border-radius: 5px;
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    
+}
+.prize1
+{
+    border: 1px solid #F9F9F9;
+        border-radius: 5px;
+        background-color:#F9F9F9;
+        width: 300px;
+        padding: 20px;
+        
+}
+.prize1__info
+{
+display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.prize2__info
+{
+    display: flex;
+        align-items: center;
+        gap: 1rem;
+}
+.prize2 {
+    border: 1px solid #F9F9F9;
+    border-radius: 5px;
+    background-color: #F9F9F9;
+    width: 300px;
+    padding: 20px;
+}
+.prize3 {
+    border: 1px solid #F9F9F9;
+    border-radius: 5px;
+    background-color: #F9F9F9;
+    width: 300px;
+    padding: 10px;
+    align-items: center;
+    gap:1rem;
+    display: flex;
+}
+.prizes{
+display: flex;
+gap:2rem;
+align-items: center;
+margin: 30px 20px;
+flex-wrap: wrap;
+justify-content: center;
+}
+.Insidebottom__feedback
+{
+    background-color: white;
+    border:1px solid white;
+border-radius: 5px;
+margin: 10px;
+padding: 10px;
+}
+.feedback>textarea{
+background-color: #F9F9F9;
+border:1px solid #F9F9F9;
+justify-content: space-around;
+width:95%;
+display: flex;
+border-radius: 5px;
+padding: 10px;
+margin: 10px;
+}
+.Register_button
+{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Register_button>button
+{
+    background-color: #A0BFE0;
+        color: black;
+        font-size: 20px;
+        font-weight: 600;
+        border-radius: 5px;
+        padding: 8px;
+        border: none;
+
+}
+.Register_button>button:hover{
+    
+    border: 2px solid #4A55A2;
+        box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.75);
+        cursor: pointer;
+}
+.Details__left
+{
+   display: flex;
+   flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.Eligibility>p
+{
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+}
+.Inside__img>img{
+    width:98%;
+    height: 300px;
+    margin: 0;
+    border-radius: 10px;
+    margin-left: 12px;
+}
+.Inside__display
+{
+    display:flex;
+}

@@ -1,0 +1,15 @@
+.InsideOptions
+{
+    display: flex;
+  align-items: center;
+}
+.InsideOptions>img{
+    width:200px;
+    height: 100px;
+    align-items: center;
+    margin-left: 15px;
+}
+.InsideOptions__info
+{
+    margin: 10px;
+}
