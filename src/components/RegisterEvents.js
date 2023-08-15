@@ -1,8 +1,16 @@
 import React, { useEffect, useState } from "react";
 import "./RegisterEvents.css";
-import { addDoc, collection, onSnapshot, query } from "firebase/firestore";
+import {
+  addDoc,
+  collection,
+  onSnapshot,
+  query,
+  updateDoc,
+} from "firebase/firestore";
 import { db } from "../firebase";
 import { useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 function RegisterEvents() {
   const mailformat =
     /^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)$/;
@@ -15,6 +23,7 @@ function RegisterEvents() {
   const [dob, setDob] = useState("");
   const [event_list, setEventList] = useState([]);
   const navigate = useNavigate();
+  const [count, setCount] = useState(0);
   const registerRef = collection(db, "regsiterations");
   const eventlistRef = collection(db, "AddEvents");
   useEffect(() => {
@@ -27,7 +36,7 @@ function RegisterEvents() {
       setEventList(items);
     });
   }, []);
-  const submitRegistration = (e) => {
+  const submitRegistration = async (e) => {
     e.preventDefault();
     if (
       !id ||
@@ -38,13 +47,13 @@ function RegisterEvents() {
       !dob ||
       !event_list
     ) {
-      alert("Fill all fields");
+      toast.warning("Fill all fields");
       return;
     } else if (!userEmail.match(mailformat)) {
-      alert("Invalid email id");
+      toast.warning("Invalid email id");
       return;
     }
-    addDoc(registerRef, {
+    await addDoc(registerRef, {
       userId: id,
       username: username,
       useremail: userEmail,
@@ -52,6 +61,8 @@ function RegisterEvents() {
       eventname: eventName,
       dob: dob,
     });
+
+    toast.success("Registration Successful");
     navigate("/");
     setId("");
     setEventName("");
@@ -107,6 +118,7 @@ function RegisterEvents() {
         />
         <button onClick={submitRegistration}>Register for the event</button>
       </form>
+      <ToastContainer />
     </div>
   );
 }

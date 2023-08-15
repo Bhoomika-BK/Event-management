@@ -55,14 +55,14 @@ function Header() {
           onItemClicked={Header_select}
           link="/addevents"
         />
-        <HeaderOptions
+        {/* <HeaderOptions
           itemId={3}
           Icon={AppRegistrationIcon}
           name="Register"
           active={selected === 3}
           onItemClicked={Header_select}
           link="/register"
-        />
+        /> */}
         <HeaderOptions
           itemId={4}
           Icon={InfoIcon}
@@ -88,19 +88,23 @@ function Header() {
           onItemClicked={Header_select}
           link="/login"
         />
-        <div
-          onClick={logout}
-          className="logout"
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            cursor: "pointer",
-          }}
-        >
-          <LogoutIcon />
-          <p>Logout</p>
-        </div>
+        {!user ? (
+          ""
+        ) : (
+          <div
+            onClick={logout}
+            className="logout"
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              cursor: "pointer",
+            }}
+          >
+            <LogoutIcon />
+            <p>Logout</p>
+          </div>
+        )}
       </div>
     </div>
   );

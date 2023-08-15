@@ -5,8 +5,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Events from "./Events";
 import PersonAddAlt1Icon from "@mui/icons-material/PersonAddAlt1";
 import HomeDesc from "./HomeDesc";
-import Footer from "./Footer";
-import { Button } from "@mui/material";
+import Footer from "../components/Footer";
 import { db } from "../firebase";
 import { collection, onSnapshot, query } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
@@ -95,7 +94,6 @@ function Home() {
         <div className="Add__event">
           <button onClick={() => navigate("/addevents")}>Add An Event</button>
         </div>
-
         <Footer />
       </div>
     </>

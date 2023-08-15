@@ -1,26 +1,23 @@
-.header__options{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: gray;
+.header__options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: gray;
+  cursor: pointer;
 }
-.icon__name{
-    font-size: 15px;
-    font-weight: 600;
-    color: gray;
+.icon__name {
+  font-size: 15px;
+  font-weight: 600;
+  color: gray;
 }
-.header__options>.MuiSvgIcon-root{
-    /* color: black; */
-    font-size: 20px;
+.header__options > .MuiSvgIcon-root {
+  /* color: black; */
+  font-size: 20px;
 }
-.icon__name:hover{
-    cursor: pointer;
-    color:black
+.icon__name:hover {
+  color: black;
 }
-/* .header__options>.MuiSvgIcon-root:hover{
-    color: black;
-    
-} */
-.header__options:hover{
-    color: black;
+
+.header__options:hover {
+  color: black;
 }

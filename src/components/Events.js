@@ -31,9 +31,9 @@ function Events({
 
             <h3 className="participantno"> Team limit: {no_participants}</h3>
           </div>
-          <div className="eventdesc">
+          {/* <div className="eventdesc">
             <p>{desc}</p>
-          </div>
+          </div> */}
           <p
             style={{
               display: "flex",

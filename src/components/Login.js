@@ -44,15 +44,15 @@ function Login() {
     e.preventDefault();
     signInWithPopup(auth, provider)
       .then(({ userAuth }) => {
-        dispatch({
-          type: "SET_USER",
-          user: userAuth,
-        });
+        const email = userAuth.user.email;
+        localStorage.setItem("email", email);
+
         navigate("/");
       })
       .catch((err) => {
         console.log(err.message);
       });
+    return true;
   };
 
   return (

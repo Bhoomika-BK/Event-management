@@ -5,7 +5,7 @@ function InsideOptions({ event_name, Event__image, description }) {
     <div className="InsideOptions" id="InsideOptions">
       <img src={Event__image} alt="" />
       <div className="InsideOptions__info">
-        <p>{event_name}</p>
+        <h4>{event_name}</h4>
         <p>{description}</p>
       </div>
     </div>
